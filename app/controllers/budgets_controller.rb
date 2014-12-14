@@ -43,6 +43,22 @@ class BudgetsController < ApplicationController
 
 	
 	def budget_params 
- 		params.require(:budget).permit(:year, :hotel, :rooms_available, :rooms_sold)
+ 		params.require(:budget).permit(
+ 			:year, 
+ 			:hotel, 
+ 			:rooms_available, 
+ 			:rooms_sold, 
+ 			:average_room_rate, 
+ 			:room_sales, 
+ 			:food_sales, 
+ 			:beverage_sales, 
+ 			:telephone_sales, 
+ 			:other_sales,
+ 			:room_revenue_per_room_occupied,
+ 			:food_revenue_per_room_occupied,
+ 			:beverage_revenue_per_room_occupied,
+ 			:telephone_revenue_per_room_occupied,
+ 			:other_revenue_per_room_occupied
+ 			 )
 	end
 end

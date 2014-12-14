@@ -12,6 +12,53 @@
   <%= f.label :rooms_sold %>
   <%= f.text_field :rooms_sold %>
   <br>
+  <%= f.label :average_room_rate %>
+  <%= f.text_field :average_room_rate %>
+  <br>
+  <%= f.label :room_sales %>
+  <%= f.text_field :room_sales %>
+  <br>
+  <%= f.label :food_sales %>
+  <%= f.text_field :food_sales %>
+  <br>
+  <%= f.label :beverage_sales %>
+  <%= f.text_field :beverage_sales %>
+  <br>
+  <%= f.label :telephone_sales %>
+  <%= f.text_field :telephone_sales %>
+  <br>
+  <%= f.label :other_sales %>
+  <%= f.text_field :other_sales %>
+  <br>
+  <h1>Total Sales = addition of the 5 previous sales</h1>
+  
+
+  <h1>Revenue/Room Occupied</h1>
+  <%= f.label :room_revenue_per_room_occupied %>
+  <%= f.text_field :room_revenue_per_room_occupied%>
+  <br>
+  <%= f.label :food_revenue_per_room_occupied %>
+  <%= f.text_field :food_revenue_per_room_occupied%>
+  <br>
+  <%= f.label :beverage_revenue_per_room_occupied %>
+  <%= f.text_field :beverage_revenue_per_room_occupied%>
+  <br>
+  <%= f.label :telephone_revenue_per_room_occupied %>
+  <%= f.text_field :telephone_revenue_per_room_occupied%>
+  <br>
+  <%= f.label :other_revenue_per_room_occupied %>
+  <%= f.text_field :other_revenue_per_room_occupied%>
+  <br>
+  <h1>Total Revenue per room occupied = addition of the 5 previous sales</h1>
+
+
+
+
+
+
+
+
+
 
   <%= f.submit 'Save' %>
   <%= link_to("Cancel", budgets_path) %>
