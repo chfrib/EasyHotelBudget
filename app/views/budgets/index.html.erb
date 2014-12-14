@@ -1,0 +1,29 @@
+<h1>Listing budgets</h1>
+
+<table>
+  <tbody>
+  <% previous_budget = "" %>
+    <% @budgets.each do |budget| %>
+      <tr>
+      
+      <% if previous_budget == budget.hotel %>
+        <td></td>
+      <% else %>
+        <td><%= budget.hotel %></td>
+      <% end %>
+      <% previous_budget = budget.hotel %>
+        <td><%= budget.year %></td>
+
+        <!-- <td><= budget.rooms_sold %></td>
+        <td><= budget.rooms_available %></td> -->
+        <td><%= link_to 'Show', budget %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
+<!--<%= link_to 'New budget', new_budget_path %>-->

@@ -1,0 +1,22 @@
+<h1>Editing Budget</h1>
+ 
+<%= form_for @budget do |f| %>
+  <%= f.label :hotel %>
+  <%= f.text_field :hotel %>
+  <br>
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+  <br>
+  <%= f.label :rooms_available %>
+  <%= f.text_field :rooms_available %>
+  <br>
+  <%= f.label :rooms_sold %>
+  <%= f.text_field :rooms_sold %>
+  <br>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 
+<%= link_to 'Back', budgets_path %>

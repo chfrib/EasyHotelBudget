@@ -1,0 +1,17 @@
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<div id="container" style="width:100%; height:400px;"></div>
+
+<h1><%= @budget.hotel %></h1> 
+<p id="year"><%= @budget.year %></p> 
+<p id="rooms_sold"><%= @budget.rooms_sold %></p> 
+<p id="rooms_available"><%= @budget.rooms_available %></p> 
+<p><%= @budget.occupancy_rate %></p> 
+
+<div id="container" style="width:100%; height:400px;"></div>
+
+
+<td><%= link_to 'Edit', edit_budget_path(@budget) %></td>
+<td><%= link_to 'Destroy', @budget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+<p><a href="/">Home</a></p>	
