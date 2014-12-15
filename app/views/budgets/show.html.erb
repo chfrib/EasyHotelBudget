@@ -1,5 +1,5 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
-<div id="container" style="width:100%; height:400px;"></div>
+
 
 <h1><%= @budget.hotel %></h1> 
 <p id="year"><%= @budget.year %></p> 
@@ -15,13 +15,21 @@
 <p id="food_revenue_per_room_occupied"><%= @budget.food_revenue_per_room_occupied %></p> 
 <p id="beverage_revenue_per_room_occupied"><%= @budget.beverage_revenue_per_room_occupied %></p>  
 <p id="telephone_revenue_per_room_occupied"><%= @budget.telephone_revenue_per_room_occupied %></p> 
-<p id="other_revenue_per_room_occupied"><%= @budget.other_revenue_per_room_occupied %></p> 
-
+<p id="other_revenue_per_room_occupied"><%= @budget.other_revenue_per_room_occupied %></p>
+<p id="room_costs"><%= @budget.room_costs %></p>p
+<p id="food_costs"><%= @budget.food_costs %></p>p
+<p id="beverage_costs"><%= @budget.beverage_costs %></p>p
+<p id="telephone_costs"><%= @budget.telephone_costs %></p>p
+<p id="other_costs"><%= @budget.other_costs %></p>p
+<p id="ge_admin_and_general"><%= @budget.ge_admin_and_general %></p>p
+<p id="ge_sales"><%= @budget.ge_sales %></p>p
+<p id="ge_utilities"><%= @budget.ge_utilities %></p>p
+<p id="ge_repair_and_maintenance"><%= @budget.ge_repair_and_maintenance %></p>p
 
 
 <p><%= @budget.occupancy_rate %></p> 
 
-<div id="container" style="width:100%; height:400px;"></div>
+<div id="container1" style="width:100%; height:400px;"></div>
 
 
 <td><%= link_to 'Edit', edit_budget_path(@budget) %></td>

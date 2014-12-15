@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209135541) do
+ActiveRecord::Schema.define(version: 20141215175311) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,15 @@ ActiveRecord::Schema.define(version: 20141209135541) do
     t.integer  "other_revenue_per_room_occupied"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "room_costs"
+    t.integer  "food_costs"
+    t.integer  "beverage_costs"
+    t.integer  "telephone_costs"
+    t.integer  "other_costs"
+    t.integer  "ge_admin_and_general"
+    t.integer  "ge_sales"
+    t.integer  "ge_utilities"
+    t.integer  "ge_repair_and_maintenance"
   end
 
 end

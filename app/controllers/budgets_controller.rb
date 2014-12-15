@@ -58,7 +58,16 @@ class BudgetsController < ApplicationController
  			:food_revenue_per_room_occupied,
  			:beverage_revenue_per_room_occupied,
  			:telephone_revenue_per_room_occupied,
- 			:other_revenue_per_room_occupied
+ 			:other_revenue_per_room_occupied,
+ 			:room_costs,
+ 			:food_costs,
+ 			:beverage_costs,
+ 			:telephone_costs,
+ 			:other_costs,
+ 			:ge_admin_and_general,
+ 			:ge_sales,
+ 			:ge_utilities,
+ 			:ge_repair_and_maintenance
  			 )
 	end
 end
