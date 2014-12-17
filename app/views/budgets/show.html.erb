@@ -68,7 +68,7 @@
         	</tr>
         	<tr>
           		<td>Total Sales</td>
-          		<td><%= @budget.total_sales %></p></td>
+          		<td><%= @budget.total_sales %></td>
         	</tr>
         </tbody>
         <thead>
@@ -78,27 +78,27 @@
         <tbody>
         	<tr>
             	<td>Room Revenue Per Room Occupied</td>
-            	<td></td>
+            	<td><%= @budget.room_revenue_per_room_occupied %></td>
         	</tr>
         	<tr>
           		<td>Food Revenue Per Room Occupied</td>
-          		<td></td>
+          		<td><%= @budget.food_revenue_per_room_occupied %></td>
         	</tr>
         	<tr>
           		<td>Beverage Revenue Per Room Occupied</td>
-          		<td></td>
+          		<td><%= @budget.beverage_revenue_per_room_occupied %></td>
         	</tr>
         	<tr>
           		<td>Telephone Revenue Per Room Occupied</td>
-          		<td></td>
+          		<td><%= @budget.telephone_revenue_per_room_occupied %></td>
         	</tr>
         	<tr>
           		<td>Other Revenue Per Room Occupied</td>
-          		<td></td>
+          		<td><%= @budget.other_revenue_per_room_occupied %></td>
         	</tr>
         	<tr>
           		<td>Total Revenue Per Room Occupied</td>
-          		<td></td>
+          		<td><%= @budget.total_revenue_per_room_occupied %></td>
         	</tr>
         </tbody>
         <thead>
@@ -128,11 +128,11 @@
         	</tr>
         	<tr>
           		<td>Total Department Costs</td>
-          		<td></td>
+          		<td><p id="total_department_costs"><%= @budget.total_department_costs %></td>
         	</tr>
         	<tr>
           		<td>Gross Operating Income</td>
-          		<td></td>
+          		<td><p id="gross_operating_income"><%= @budget.gross_operating_income %></td>
         	</tr>
         </tbody>
         <thead>
@@ -146,7 +146,7 @@
         	</tr>
         	<tr>
           		<td>Sales and Marketing</td>
-          		<td><p id="ge_sales"><%= @budget.ge_sales %></p></td>
+          		<td><p id="ge_sales_and_marketing"><%= @budget.ge_sales_and_marketing %></p></td>
         	</tr>
         	<tr>
           		<td>Utilities</td>
@@ -158,11 +158,15 @@
         	</tr>
         	<tr>
           		<td>Total General Expenses</td>
-          		<td></td>
+          		<td><p id="total_general_expenses"><%= @budget.total_general_expenses %></td>
+        	</tr>
+        	<tr>
+          		<td>Total Costs</td>
+          		<td><p id="total_costs"><%= @budget.total_costs %></td>
         	</tr>
         	<tr>
           		<td>Gross Operating Profit</td>
-          		<td></td>
+          		<td><p id="gross_operating_profit"><%= @budget.gross_operating_profit %></td>
         	</tr>
         </tbody>
       </table>
