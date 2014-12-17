@@ -1,6 +1,8 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
+
+
 <div class="panel panel-default">
       <!-- Default panel contents -->
       <div class="panel-heading"><h1><%= @budget.hotel %></h1></div>
@@ -49,26 +51,32 @@
         	<tr>
             	<td>Room Sales</td>
             	<td><p id="room_sales"><%= @budget.room_sales %></p></td>
+            	<td><p id="room_sales_proportion"><%= @budget.room_sales_proportion %></p></td>
         	</tr>
         	<tr>
           		<td>Food sales</td>
           		<td><p id="food_sales"><%= @budget.food_sales %></p></td>
+          		<td><p id="food_sales_proportion"><%= @budget.food_sales_proportion %></p></td>
         	</tr>
         	<tr>
           		<td>Beverage Sales</td>
           		<td><p id="beverage_sales"><%= @budget.beverage_sales %></p></td>
+          		<td><p id="beverage_sales_proportion"><%= @budget.beverage_sales_proportion %></p></td>
         	</tr>
         	<tr>
           		<td>Telephone Sales</td>
           		<td><p id="telephone_sales"><%= @budget.telephone_sales %></p></td>
+          		<td><p id="telephone_sales_proportion"><%= @budget.telephone_sales_proportion %></p></td>
         	</tr>
         	<tr>
           		<td>Other Sales</td>
           		<td><p id="other_sales"><%= @budget.other_sales %></p></td>
+          		<td><p id="other_sales_proportion"><%= @budget.other_sales_proportion %></p></td>
         	</tr>
         	<tr>
           		<td>Total Sales</td>
           		<td><%= @budget.total_sales %></td>
+          		<td>100 %</td>
         	</tr>
         </tbody>
         <thead>
@@ -172,8 +180,10 @@
       </table>
     </div>
 
+<div id="container1" style="width:100%; height:400px;"></div>
 
-<div id="container" style="width:100%; height:400px;"></div>
+<div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
 
 
 <td><%= link_to 'Edit', edit_budget_path(@budget) %></td>

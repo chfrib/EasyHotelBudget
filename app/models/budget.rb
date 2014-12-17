@@ -55,10 +55,34 @@ class Budget < ActiveRecord::Base
 	def gross_operating_profit
 		(total_sales.to_f - total_department_costs.to_f - total_general_expenses.to_f)
 	end
-	# Room Revenue Per Room Occupied =
-	# Food Revenue Per Room Occupied =
-	# Beverage Revenue Per Room Occupied =
-	# Telephone Revenue Per Room Occupied =
-	# Other Revenue Per Room Occupied =
+
+	def room_sales_proportion
+		float_to_percentage(room_sales.to_f/total_sales.to_f)
+	end
+
+	def food_sales_proportion
+		float_to_percentage(food_sales.to_f/total_sales.to_f)
+	end
+
+	def beverage_sales_proportion
+		float_to_percentage(beverage_sales.to_f/total_sales.to_f)
+	end
+
+	def telephone_sales_proportion
+		float_to_percentage(telephone_sales.to_f/total_sales.to_f)
+	end
+
+	def other_sales_proportion
+		float_to_percentage(other_sales.to_f/total_sales.to_f)
+	end
+
+	def float_to_2_decimals(float_value)
+		float_value.round(2)
+	end
+
+	def float_to_percentage(float_value)
+		float_to_2_decimals(float_value*100)
+	end
 
 end
+
