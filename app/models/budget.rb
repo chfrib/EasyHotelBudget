@@ -9,17 +9,13 @@ class Budget < ActiveRecord::Base
 	end
 
 	def total_sales
-		total_sales = 	room_sales 
-						+ food_sales 
-						+ beverage_sales 
-						+ telephone_sales 
-						+ other_sales
+		(room_sales.to_f + food_sales.to_f + beverage_sales.to_f + telephone_sales.to_f + other_sales.to_f)
 	end
 
-	Room Revenue Per Room Occupied =
-	Food Revenue Per Room Occupied =
-	Beverage Revenue Per Room Occupied =
-	Telephone Revenue Per Room Occupied =
-	Other Revenue Per Room Occupied =
+	# Room Revenue Per Room Occupied =
+	# Food Revenue Per Room Occupied =
+	# Beverage Revenue Per Room Occupied =
+	# Telephone Revenue Per Room Occupied =
+	# Other Revenue Per Room Occupied =
 
 end
