@@ -9,8 +9,9 @@
 <body>
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
+        
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -27,8 +28,11 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
+       </div>
     </nav>
+    <div class= container>
+    	<%= yield %>    	
+    </div>
 
 
     <!-- Bootstrap core JavaScript
@@ -39,7 +43,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   
-<%= yield %>
+
 
 </body>
 </html>

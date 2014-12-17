@@ -1,35 +1,108 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+<div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><h1><%= @budget.hotel %></h1></div>
+
+      <!-- Table -->
+      <table class="table">
+       <!--  <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td>Year</td>
+            <td><p id="year"><%= @budget.year %></p></td>
+          </tr>
+          <tr>
+            <td>Type of budget</td>
+            <td>budget or realised</td>
+          </tr>
+         <br>
+         <thead>
+          <tr>
+            <th>Rooms</th>
+          </tr>
+        </thead>
+          <tr>
+            <td>Room available</td>
+            <td><p id="rooms_available"><%= @budget.rooms_available %></p></td>
+          </tr>
+          <tr>
+          	<td>Room Sold</td>
+          	<td><p id="rooms_sold"><%= @budget.rooms_sold %></p></td>
+          </tr>
+          <tr>
+          	<td>Average Room Rate</td>
+          	<td><%= @budget.average_room_rate %></td>
+          </tr>
+          <tr>
+          	<td>Occupancy Rate</td>
+          	<td><p><%= @budget.occupancy_rate %></p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+ 
+Year 
+<!-- type: realised or budgeted -->
 
 
-<h1><%= @budget.hotel %></h1> 
-<p id="year"><%= @budget.year %></p> 
-<p id="rooms_sold"><%= @budget.rooms_sold %></p> 
-<p id="rooms_available"><%= @budget.rooms_available %></p> 
-<p id="average_room_rate"><%= @budget.average_room_rate %></p> 
-<p id="room_sales"><%= @budget.room_sales %></p> 
-<p id="food_sales"><%= @budget.food_sales %></p> 
-<p id="beverage_sales"><%= @budget.beverage_sales %></p> 
-<p id="telephone_sales"><%= @budget.telephone_sales %></p> 
-<p id="other_sales"><%= @budget.other_sales %></p> 
-<p id="room_revenue_per_room_occupied"><%= @budget.room_revenue_per_room_occupied %></p> 
-<p id="food_revenue_per_room_occupied"><%= @budget.food_revenue_per_room_occupied %></p> 
-<p id="beverage_revenue_per_room_occupied"><%= @budget.beverage_revenue_per_room_occupied %></p>  
-<p id="telephone_revenue_per_room_occupied"><%= @budget.telephone_revenue_per_room_occupied %></p> 
-<p id="other_revenue_per_room_occupied"><%= @budget.other_revenue_per_room_occupied %></p>
-<p id="room_costs"><%= @budget.room_costs %></p>p
-<p id="food_costs"><%= @budget.food_costs %></p>p
-<p id="beverage_costs"><%= @budget.beverage_costs %></p>p
-<p id="telephone_costs"><%= @budget.telephone_costs %></p>p
-<p id="other_costs"><%= @budget.other_costs %></p>p
-<p id="ge_admin_and_general"><%= @budget.ge_admin_and_general %></p>p
-<p id="ge_sales"><%= @budget.ge_sales %></p>p
-<p id="ge_utilities"><%= @budget.ge_utilities %></p>p
-<p id="ge_repair_and_maintenance"><%= @budget.ge_repair_and_maintenance %></p>p
 
 
-<p><%= @budget.occupancy_rate %></p> 
+Sales
 
-<div id="container1" style="width:100%; height:400px;"></div>
+Room Sales<p id="room_sales"><%= @budget.room_sales %></p> 
+Food sales<p id="food_sales"><%= @budget.food_sales %></p> 
+Beverage Sales<p id="beverage_sales"><%= @budget.beverage_sales %></p> 
+Telephone Sales<p id="telephone_sales"><%= @budget.telephone_sales %></p> 
+Other Sales<p id="other_sales"><%= @budget.other_sales %></p> 
+
+Total Sales=
+
+
+Room Revenue Per Room Occupied =
+Food Revenue Per Room Occupied =
+Beverage Revenue Per Room Occupied =
+Telephone Revenue Per Room Occupied =
+Other Revenue Per Room Occupied =
+
+Department Costs =
+
+<p id="room_costs"><%= @budget.room_costs %></p>
+<p id="food_costs"><%= @budget.food_costs %></p>
+<p id="beverage_costs"><%= @budget.beverage_costs %></p>
+<p id="telephone_costs"><%= @budget.telephone_costs %></p>
+<p id="other_costs"><%= @budget.other_costs %></p>
+
+Total Department Costs =
+
+
+Gross Operating Income =
+
+
+General Expenses
+
+<p id="ge_admin_and_general"><%= @budget.ge_admin_and_general %></p>
+<p id="ge_sales"><%= @budget.ge_sales %></p>
+<p id="ge_utilities"><%= @budget.ge_utilities %></p>
+<p id="ge_repair_and_maintenance"><%= @budget.ge_repair_and_maintenance %></p>
+
+Total General Expenses =
+
+
+Gross Operating Profit =
+
+
+
+
+<div id="container" style="width:100%; height:400px;"></div>
 
 
 <td><%= link_to 'Edit', edit_budget_path(@budget) %></td>

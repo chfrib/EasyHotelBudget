@@ -3,7 +3,7 @@ $(function () {
     var rooms_available = parseInt($("#rooms_available").text());
     var year = $("#year").text();
 
-    $('#container1').highcharts({
+    $('#container').highcharts({
         chart: {
             type: 'bar'
         },

@@ -12,9 +12,9 @@
   <%= f.label :rooms_sold %>
   <%= f.text_field :rooms_sold %>
   <br>
-  <%= f.label :average_room_rate %>
-  <%= f.text_field :average_room_rate %>
-  <br>
+  <!-- <= f.label :average_room_rate %>
+  <= f.text_field :average_room_rate %>
+  <br> -->
   <h1>Sales</h1>
   <%= f.label :room_sales %>
   <%= f.text_field :room_sales %>
@@ -31,25 +31,27 @@
   <%= f.label :other_sales %>
   <%= f.text_field :other_sales %>
   <br>
-  <h1>Total Sales = addition of the 5 previous sales</h1>
+ <!--  <h1>Total Sales = addition of the 5 previous sales</h1> -->
   
+  
+<!--change that in result for a result in a calcul
   <h1>Revenue/Room Occupied</h1>
-  <%= f.label :room_revenue_per_room_occupied %>
-  <%= f.text_field :room_revenue_per_room_occupied%>
+  <= f.label :room_revenue_per_room_occupied %>
+  <= f.text_field :room_revenue_per_room_occupied%>
   <br>
-  <%= f.label :food_revenue_per_room_occupied %>
-  <%= f.text_field :food_revenue_per_room_occupied%>
+  <= f.label :food_revenue_per_room_occupied %>
+  <= f.text_field :food_revenue_per_room_occupied%>
   <br>
-  <%= f.label :beverage_revenue_per_room_occupied %>
-  <%= f.text_field :beverage_revenue_per_room_occupied%>
+  <= f.label :beverage_revenue_per_room_occupied %>
+  <= f.text_field :beverage_revenue_per_room_occupied%>
   <br>
-  <%= f.label :telephone_revenue_per_room_occupied %>
-  <%= f.text_field :telephone_revenue_per_room_occupied%>
+  <= f.label :telephone_revenue_per_room_occupied %>
+  <= f.text_field :telephone_revenue_per_room_occupied%>
   <br>
-  <%= f.label :other_revenue_per_room_occupied %>
-  <%= f.text_field :other_revenue_per_room_occupied%>
+  <= f.label :other_revenue_per_room_occupied %>
+  <= f.text_field :other_revenue_per_room_occupied%>
   <br>
-  <h1>Total Revenue per room occupied = addition of the 5 previous sales</h1>
+  <h1>Total Revenue per room occupied = addition of the 5 previous sales</h1>-->
 
   <h1>Department costs</h1>
   <%= f.label :room_costs %>
@@ -67,8 +69,8 @@
   <%= f.label :other_costs %>
   <%= f.text_field :other_costs %>
   <br>
-  <h1>Total Department Costs = addition of the 5 previous costs</h1>
-  <h1>Gross operating Income= Total Sales - Total Department Costs</h1>
+  <!-- <h1>Total Department Costs = addition of the 5 previous costs</h1>
+  <h1>Gross operating Income= Total Sales - Total Department Costs</h1> -->
   <h1>General Expenses</h1>
   <%= f.label :ge_admin_and_general %>
   <%= f.text_field :ge_admin_and_general %>
@@ -83,10 +85,10 @@
   <%= f.text_field :ge_repair_and_maintenance %>
   <br>
 
-  <h1>Total General Expenses = addition of the 4 previous general expenses</h1>
+<!--   <h1>Total General Expenses = addition of the 4 previous general expenses</h1>
 
   <h1>Gross Operating Profit = Total Sales - Total Department Costs - Total General Expenses</h1>
-  <h1>GOP realised Last Year</h1>
+  <h1>GOP realised Last Year</h1> -->
 
   <%= f.submit 'Save' %>
   <%= link_to("Cancel", budgets_path) %>

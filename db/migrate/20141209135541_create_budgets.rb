@@ -11,11 +11,7 @@ class CreateBudgets < ActiveRecord::Migration
  	  t.integer :beverage_sales 
  	  t.integer :telephone_sales 
  	  t.integer :other_sales 
- 	  t.integer :room_revenue_per_room_occupied
- 	  t.integer :food_revenue_per_room_occupied
- 	  t.integer :beverage_revenue_per_room_occupied 
- 	  t.integer :telephone_revenue_per_room_occupied
- 	  t.integer :other_revenue_per_room_occupied
+ 	  
  	  t.timestamps
     end
   end
