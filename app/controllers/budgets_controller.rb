@@ -45,7 +45,8 @@ class BudgetsController < ApplicationController
 	def budget_params 
  		params.require(:budget).permit(
  			:year, 
- 			:hotel, 
+ 			:hotel,
+ 			:realised,
  			:rooms_available, 
  			:rooms_sold, 
  			:average_room_rate, 
@@ -60,7 +61,7 @@ class BudgetsController < ApplicationController
  			:telephone_costs,
  			:other_costs,
  			:ge_admin_and_general,
- 			:ge_sales,
+ 			:ge_sales_and_marketing,
  			:ge_utilities,
  			:ge_repair_and_maintenance
  			 )
